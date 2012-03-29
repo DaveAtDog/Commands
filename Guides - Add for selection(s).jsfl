@@ -31,22 +31,6 @@ for (var i = 0; i < fl.getDocumentDOM().selection.length; i++)
 	}	
 }
 
-
-/*
-if (curSelection) {
-	additionalGuides.push('<guideline direction="v">' + curSelection.x + '</guideline>');
-	additionalGuides.push('<guideline direction="h">' + curSelection.y + '</guideline>');
-	additionalGuides.push('<guideline direction="v">' + (curSelection.x + curSelection.width) + '</guideline>');
-	additionalGuides.push('<guideline direction="h">' + (curSelection.y + curSelection.height) + '</guideline>');
-	
-	for(var i = 0; i < additionalGuides.length; i++)
-	{
-		currentGuides.appendChild(new XML(additionalGuides[i]));
-	}
-}
-
-*/ 
-
 //fl.trace(currentGuides);
 
 currentTimeline.setGuidelines(new XML(currentGuides));
