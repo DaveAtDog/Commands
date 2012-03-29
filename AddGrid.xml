@@ -1,0 +1,34 @@
+﻿<?xml version='1.0' encoding='UTF-8'?>
+<dialog buttons='accept,cancel' title='Add a Guide'>
+    <grid>
+        <columns>
+            <column/>
+            <column/>
+        </columns>
+        <rows>
+            <row>
+                <label value='Orientation:'/>
+                <radiogroup id='orientation'>
+                    <radio selected='true' label='x'/>
+                    <radio label='y'/>
+                </radiogroup>
+            </row>
+			<row>
+				<checkbox id="side_gutters" label="Side Gutters?" checked="false" />
+			</row>
+            <row>
+                <label value='Gutter Width:'/>
+                <textbox maxlength='16' multiline='false' id='gutter_width' value='12' tabindex='1'/>
+            </row>
+			<row>
+                <label value='#Columns:'/>
+                <textbox maxlength='16' multiline='false' id='num_columns' value='12' tabindex='2'/>
+            </row>
+			<row>
+                <label value='Columns Width:'/>
+                <textbox maxlength='16' multiline='false' id='column_width' value='69' tabindex='3'/>
+            </row>
+        </rows>
+    </grid>
+    <separator/>
+</dialog>

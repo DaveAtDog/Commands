@@ -1,0 +1,23 @@
+﻿<?xml version='1.0' encoding='UTF-8'?>
+<dialog buttons='accept,cancel' title='Add a Guide'>
+    <grid>
+        <columns>
+            <column/>
+            <column/>
+        </columns>
+        <rows>
+            <row>
+                <label value='Orientation:'/>
+                <radiogroup id='orientation'>
+                    <radio selected='true' label='x'/>
+                    <radio label='y'/>
+                </radiogroup>
+            </row>
+            <row>
+                <label value='Position:'/>
+                <textbox maxlength='16' multiline='false' id='position' value='' tabindex='1'/>
+            </row>
+        </rows>
+    </grid>
+    <separator/>
+</dialog>
